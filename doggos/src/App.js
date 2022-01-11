@@ -27,6 +27,10 @@ class App extends React.Component {
             console.log("DogImages changed");
             if (this.state.breed === "chihuahua") {
                 console.log("Chihauhua selected :(");
+                axios.get("https://dog.ceo/api/breed/husky/images")
+                    .then(resp=> {
+                        console.log(resp);
+                    })
             }
         }
     }
