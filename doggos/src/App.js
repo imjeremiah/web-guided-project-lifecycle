@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import ImageList from './components/ImageList';
+import SearchForm from './components/SearchForm';
 
 class App extends React.Component {
     state = {
