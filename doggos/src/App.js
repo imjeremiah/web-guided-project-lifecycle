@@ -62,6 +62,11 @@ class App extends React.Component {
         e.preventDefault();
         const breed = this.state.breed;
 
+        this.setState({
+            ...this.state,
+            isLoading: true
+        });
+        
         axios.get(`https://dog.ceo/api/breed/${breed}/images`)
             .then(resp => {
                 this.setState({
