@@ -9,6 +9,14 @@ class App extends React.Component {
                 <input/>
                 <button>Fetch Dogs</button>
             </form>
+            <div>
+                <img src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+                <img src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+                <img src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+                <img src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+                <img src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+                <img src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+            </div>
         </div>);
     }
 }
