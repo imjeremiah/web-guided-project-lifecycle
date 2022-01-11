@@ -16,12 +16,16 @@ class App extends React.Component {
             });
     }
 
+    handleSearch = () => {
+        console.log("searching");
+    }
+
     render() {
         return (<div>
             <h1>Dog Image Query 3000</h1>
             <form>
                 <input/>
-                <button>Fetch Dogs</button>
+                <button onClick={this.handleSearch}>Fetch Dogs</button>
             </form>
             <div>
                 {
