@@ -66,13 +66,14 @@ class App extends React.Component {
             ...this.state,
             isLoading: true
         });
-        
+
         axios.get(`https://dog.ceo/api/breed/${breed}/images`)
             .then(resp => {
                 this.setState({
                     ...this.state,
                     dogImages: resp.data.message,
-                    breed: ''
+                    breed: '',
+                    isLoading: false
                 })
             })
     }
