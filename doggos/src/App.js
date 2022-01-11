@@ -23,7 +23,9 @@ class App extends React.Component {
         //3. check if breed === chihuahua
         //4. do an axios call on husky
         console.log("State Changed");
-        if ()
+        if (prevState.dogImages !== this.state.dogImages) {
+            console.log("DogImages changed");
+        }
     }
 
     handleChange = (e) => {
