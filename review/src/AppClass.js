@@ -2,6 +2,7 @@ import React from "react";
 
 class AppClass extends React.Component {
   constructor() {
+    console.log("AppClass: Setup State.");
     super();
     this.state = {
       name: "Warren"
@@ -17,6 +18,7 @@ class AppClass extends React.Component {
 
   
   render() {
+    console.log("AppClass: Render Dom");
     return (
       <div>
         <h1>Hello {this.state.name}.</h1>
