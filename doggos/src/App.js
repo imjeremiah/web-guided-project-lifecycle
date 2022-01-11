@@ -1,20 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-
-class ImageList extends React.Component {
-    render() {
-        return (<div>
-            {
-                this.props.dogImages.map(image=> {
-                    return <img key={image} width="300" src={image}/>
-                })
-            }
-        </div>);
-    }
-}
-
-
+import ImageList from './components/ImageList';
 
 class App extends React.Component {
     state = {
