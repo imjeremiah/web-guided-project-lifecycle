@@ -16,8 +16,9 @@ class App extends React.Component {
             });
     }
 
-    handleSearch = () => {
-        console.log("searching");
+    handleSearch = (e) => {
+        e.preventDefault();
+        
     }
 
     render() {
