@@ -24,6 +24,10 @@ class AppClass extends React.Component {
     if(prevState.name === "Warren") {
       console.log("What's wrong with Warren?");
     }
+
+    if (this.state.name === "Crhis") {
+      console.log("But Chris is cool!!!");
+    }
   }
 
   handleNameButtonClick = (e) => {
