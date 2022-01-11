@@ -5,7 +5,8 @@ class AppClass extends React.Component {
     console.log("AppClass: Setup State.");
     super();
     this.state = {
-      name: "Warren"
+      name: "Warren",
+      age: 33
     };
   }
 
