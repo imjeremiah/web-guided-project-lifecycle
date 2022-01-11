@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const AppFunc = () => {
   console.log("AppFunc: Setup State.");
   const [name, setName] = useState("Warren");
+  const [age, setAge] = useState(33);
   
   useEffect(()=> {
     console.log("AppFunc: Component has mounted.");
@@ -10,7 +11,7 @@ const AppFunc = () => {
 
   useEffect(()=> {
     console.log("AppFunc: Component has changed.");
-  })
+  });
 
   const handleClick = () => {
     console.log("AppFunc: Change State.");
