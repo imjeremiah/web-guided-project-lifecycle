@@ -37,6 +37,13 @@ class App extends React.Component {
         //             })
         //     }
         // }
+
+        if (this.state.breed === "chihuahua") {
+            this.setState({
+                ...this.state,
+                breed: "husky"
+            })
+        }
     }
 
     handleChange = (e) => {
