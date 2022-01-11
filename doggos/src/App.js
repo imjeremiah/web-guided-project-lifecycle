@@ -21,6 +21,10 @@ class App extends React.Component {
         //1. get our breed input.
         //2. do an axios call
         //3. save the response from the call to our state
+        axios.get("https://dog.ceo/api/breed/chow/images")
+            .then(resp=> {
+                console.log(resp.data.message);
+            })
     }
 
     render() {
