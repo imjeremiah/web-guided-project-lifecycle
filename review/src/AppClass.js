@@ -13,7 +13,7 @@ class AppClass extends React.Component {
     console.log("AppClass: Component Has Mounted.");
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
     console.log("AppClass: Component Has Changed.");
   }
 
