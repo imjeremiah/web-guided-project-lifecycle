@@ -11,7 +11,7 @@ const AppFunc = () => {
 
   useEffect(()=> {
     console.log("AppFunc: Component has changed.");
-  });
+  }, [name]);
 
   const handleClick = () => {
     console.log("AppFunc: Change State.");
