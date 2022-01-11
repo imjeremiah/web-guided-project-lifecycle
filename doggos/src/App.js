@@ -57,7 +57,8 @@ class App extends React.Component {
             .then(resp => {
                 this.setState({
                     ...this.state,
-                    dogImages: resp.data.message
+                    dogImages: resp.data.message,
+                    breed: ''
                 })
             })
     }
@@ -66,7 +67,7 @@ class App extends React.Component {
         return (<div>
             <h1>Dog Image Query 3000</h1>
             <form>
-                <input onChange={this.handleChange}/>
+                <input value={this.state.breed} onChange={this.handleChange}/>
                 <button onClick={this.handleSearch}>Fetch Dogs</button>
             </form>
             <div>
