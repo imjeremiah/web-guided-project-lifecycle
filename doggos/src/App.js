@@ -29,7 +29,11 @@ class App extends React.Component {
                 console.log("Chihauhua selected :(");
                 axios.get("https://dog.ceo/api/breed/husky/images")
                     .then(resp=> {
-                        console.log(resp);
+                        this.setState({
+                            ...this.state,
+                            dogImages: resp.data.message,
+                            
+                        })
                     })
             }
         }
