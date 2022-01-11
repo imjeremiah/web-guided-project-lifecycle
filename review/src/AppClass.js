@@ -25,7 +25,7 @@ class AppClass extends React.Component {
       console.log("What's wrong with Warren?");
     }
 
-    if (this.state.name === "Crhis") {
+    if (this.state.name === "Chris") {
       console.log("But Chris is cool!!!");
     }
   }
@@ -34,7 +34,7 @@ class AppClass extends React.Component {
     console.log("AppClass: Changes State");
     this.setState({
       ...this.state,
-      name: "Allison"
+      name: "Chris"
     });
   };
 
