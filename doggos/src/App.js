@@ -16,7 +16,8 @@ class App extends React.Component {
             .then(resp=> {
                 this.setState({
                     ...this.state,
-                    dogImages: resp.data.message
+                    dogImages: resp.data.message,
+                    isLoading: false
                 });
             });
     }
