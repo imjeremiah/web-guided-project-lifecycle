@@ -32,7 +32,7 @@ class App extends React.Component {
                         this.setState({
                             ...this.state,
                             dogImages: resp.data.message,
-                            
+                            breed: "husky"
                         })
                     })
             }
