@@ -58,9 +58,6 @@ class App extends React.Component {
 
     handleSearch = (e) => {
         e.preventDefault();
-        //1. get our breed input.
-        //2. do an axios call
-        //3. save the response from the call to our state
         const breed = this.state.breed;
 
         axios.get(`https://dog.ceo/api/breed/${breed}/images`)
@@ -74,6 +71,8 @@ class App extends React.Component {
     }
 
     render() {
+        const isLoading = false;
+        
         return (<div>
             <h1>Dog Image Query 3000</h1>
             <SearchForm breed={this.state.breed} handleChange={this.handleChange} handleSearch={this.handleSearch} />
