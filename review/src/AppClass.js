@@ -21,13 +21,13 @@ class AppClass extends React.Component {
     console.log("old state: ", prevState);
     console.log("new state: ", this.state);
 
-    if(prevState.name === "Warren") {
-      console.log("What's wrong with Warren?");
-    }
+    // if(prevState.age === this.state.age) {
+    //   console.log("What's wrong with Warren?");
+    // }
 
-    if (this.state.name === "Chris") {
-      console.log("But Chris is cool!!!");
-    }
+    // if (this.state.name === "Chris") {
+    //   console.log("But Chris is cool!!!");
+    // }
   }
 
   handleNameButtonClick = (e) => {
