@@ -14,7 +14,7 @@ class App extends React.Component {
 
     render() {
         console.log(this.state);
-        
+
         return (<div>
             <h1>Dog Image Query 3000</h1>
             <form>
@@ -22,6 +22,11 @@ class App extends React.Component {
                 <button>Fetch Dogs</button>
             </form>
             <div>
+                {
+                    this.state.dogImages.map(image=> {
+                        console.log(image);
+                    })
+                }
                 <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
                 <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
                 <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
