@@ -26,7 +26,7 @@ class AppClass extends React.Component {
     console.log("AppClass: Changes State");
     this.setState({
       ...this.state,
-      name: "Allison"
+      name: Math.random()
     });
   };
 
