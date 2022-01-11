@@ -77,13 +77,7 @@ class App extends React.Component {
                 <input value={this.state.breed} onChange={this.handleChange}/>
                 <button onClick={this.handleSearch}>Fetch Dogs</button>
             </form>
-            <div>
-                {
-                    this.state.dogImages.map(image=> {
-                        return <img key={image} width="300" src={image}/>
-                    })
-                }
-            </div>
+            <ImageList />
         </div>);
     }
 }
