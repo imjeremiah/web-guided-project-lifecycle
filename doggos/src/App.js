@@ -71,13 +71,13 @@ class App extends React.Component {
     }
 
     render() {
-        const isLoading = dogImages.length === 0;
+        const isLoading = (this.state.dogImages.length === 0);
         
         return (<div>
             <h1>Dog Image Query 3000</h1>
             <SearchForm breed={this.state.breed} handleChange={this.handleChange} handleSearch={this.handleSearch} />
             {
-                isLoading ? <div>Loading</div> : <ImageList dogImages={this.state.dogImages}/>
+                isLoading ? <h1>Loading</h1> : <ImageList dogImages={this.state.dogImages}/>
             }
         </div>);
     }
