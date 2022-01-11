@@ -6,8 +6,8 @@ import ImageList from './components/ImageList';
 class SearchForm extends React.Components {
     render() {
         return(<form>
-            <input value={this.state.breed} onChange={this.handleChange}/>
-            <button onClick={this.handleSearch}>Fetch Dogs</button>
+            <input value={this.props.breed} onChange={this.props.handleChange}/>
+            <button onClick={this.props.handleSearch}>Fetch Dogs</button>
         </form>);
     }
 }
