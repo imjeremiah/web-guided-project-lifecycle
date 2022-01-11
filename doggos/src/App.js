@@ -7,9 +7,13 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("https://dog.ceo/api/breed/hound/images")
+        axios.get("https://dog.ceo/api/breed/chow/images")
             .then(resp=> {
                 console.log(resp.data.message);
+                this.setState({
+                    ...this.state,
+                    dogImages: resp.data.message
+                });
             });
     }
 
