@@ -3,15 +3,6 @@ import axios from 'axios';
 
 import ImageList from './components/ImageList';
 
-class SearchForm extends React.Component {
-    render() {
-        return(<form>
-            <input value={this.props.breed} onChange={this.props.handleChange}/>
-            <button onClick={this.props.handleSearch}>Fetch Dogs</button>
-        </form>);
-    }
-}
-
 class App extends React.Component {
     state = {
         dogImages: [],
