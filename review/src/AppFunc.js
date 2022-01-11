@@ -10,7 +10,6 @@ const AppFunc = () => {
   };
 
   console.log("AppFunc: Render DOM");
-  console.log("Current state: ", name);
   return (
     <div>
       <h1>Hello {name}!</h1>
