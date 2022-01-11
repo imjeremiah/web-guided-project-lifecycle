@@ -18,7 +18,6 @@ class App extends React.Component {
     }
 
     handleChange = (e) => {
-        console.log(e.target.value);
         this.setState({
             ...this.state,
             breed: e.target.value
@@ -30,7 +29,7 @@ class App extends React.Component {
         //1. get our breed input.
         //2. do an axios call
         //3. save the response from the call to our state
-        const breed = e.target.value;
+        const breed = this.state.breed;
 
         axios.get(`https://dog.ceo/api/breed/${breed}/images`)
             .then(resp => {
@@ -42,7 +41,6 @@ class App extends React.Component {
     }
 
     render() {
-        console.log(this.state.breed);
         return (<div>
             <h1>Dog Image Query 3000</h1>
             <form>
