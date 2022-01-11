@@ -3,12 +3,7 @@ import axios from 'axios';
 
 import ImageList from './components/ImageList';
 import SearchForm from './components/SearchForm';
-
-class Loading extends React.Component {
-    render() {
-        return<h1>Loading</h1>;
-    }
-}
+import Loading from './components/Loading';
 
 
 class App extends React.Component {
