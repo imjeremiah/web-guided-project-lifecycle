@@ -71,7 +71,7 @@ class App extends React.Component {
     }
 
     render() {
-        const isLoading = false;
+        const isLoading = true;
         
         return (<div>
             <h1>Dog Image Query 3000</h1>
