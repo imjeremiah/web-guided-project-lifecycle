@@ -30,6 +30,8 @@ class App extends React.Component {
         console.log("State Changed");
         if (prevState.dogImages !== this.state.dogImages) {
             console.log("DogImages changed");
+            console.log(this.state.breed);
+
             if (this.state.breed === "chihuahua") {
                 console.log("Chihauhua selected :(");
 
@@ -37,7 +39,7 @@ class App extends React.Component {
                     ...this.state,
                     isLoading: true
                 });
-                
+
                 axios.get("https://dog.ceo/api/breed/husky/images")
                     .then(resp=> {
                         this.setState({
@@ -72,7 +74,6 @@ class App extends React.Component {
                 this.setState({
                     ...this.state,
                     dogImages: resp.data.message,
-                    breed: '',
                     isLoading: false
                 })
             })
