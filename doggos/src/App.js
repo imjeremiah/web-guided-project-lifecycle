@@ -6,9 +6,7 @@ class App extends React.Component {
         dogImages: [
             "https://images.dog.ceo/breeds/husky/20180901_150234.jpg",
             "https://images.dog.ceo/breeds/husky/20180904_185604.jpg",
-            "https://images.dog.ceo/breeds/husky/20180924_193829.jpg",
-            "https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg",
-            "https://images.dog.ceo/breeds/husky/n02110185_10047.jpg",
+            "https://images.dog.ceo/breeds/husky/20180924_193829.jpg"
         ]
     }
 
@@ -24,14 +22,9 @@ class App extends React.Component {
             <div>
                 {
                     this.state.dogImages.map(image=> {
-                        // console.log(image);
-                        <img width="300" src={image}/>
+                        return <img width="300" src={image}/>
                     })
                 }
-                {/* <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
-                <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
-                <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
-                <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/> */}
             </div>
         </div>);
     }
