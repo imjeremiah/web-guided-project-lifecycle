@@ -4,6 +4,14 @@ import axios from 'axios';
 import ImageList from './components/ImageList';
 import SearchForm from './components/SearchForm';
 
+class Loading extends React.Component {
+    render() {
+        
+        return<h1>Loading</h1>;
+    }
+}
+
+
 class App extends React.Component {
     state = {
         dogImages: [],
@@ -84,7 +92,7 @@ class App extends React.Component {
             <h1>Dog Image Query 3000</h1>
             <SearchForm breed={this.state.breed} handleChange={this.handleChange} handleSearch={this.handleSearch} />
             {
-                this.state.isLoading ? <h1>Loading</h1> : <ImageList dogImages={this.state.dogImages}/>
+                this.state.isLoading ?  : <ImageList dogImages={this.state.dogImages}/>
             }
         </div>);
     }
