@@ -10,9 +10,12 @@ class AppClass extends React.Component {
   }
 
   componentDidMount() {
-    console.log("AppClass: Component has Mounted.");
+    console.log("AppClass: Component Has Mounted.");
   }
 
+  componentDidUpdate() {
+    console.log("AppClass: Component Has Changed.");
+  }
 
   handleNameButtonClick = (e) => {
     console.log("AppClass: Changes State");
@@ -24,7 +27,7 @@ class AppClass extends React.Component {
 
   
   render() {
-    console.log("AppClass: Render Dom");
+    console.log("AppClass: Render Dom.");
     return (
       <div>
         <h1>Hello {this.state.name}.</h1>
