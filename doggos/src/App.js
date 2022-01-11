@@ -92,7 +92,7 @@ class App extends React.Component {
                 <input value={this.state.breed} onChange={this.handleChange}/>
                 <button onClick={this.handleSearch}>Fetch Dogs</button>
             </form>
-            <ImageList />
+            <ImageList dogImages={this.state.dogImages}/>
         </div>);
     }
 }
