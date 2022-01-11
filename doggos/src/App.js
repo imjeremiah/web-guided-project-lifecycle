@@ -35,15 +35,16 @@ class App extends React.Component {
 
                 this.setState({
                     ...this.state,
-                    loading: true
+                    isLoading: true
                 });
+                
                 axios.get("https://dog.ceo/api/breed/husky/images")
                     .then(resp=> {
                         this.setState({
                             ...this.state,
                             dogImages: resp.data.message,
                             breed: "husky",
-                            loading: false
+                            isLoading: false
                         })
                     })
             }
