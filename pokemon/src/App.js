@@ -6,12 +6,12 @@ import './styles.scss';
 import Pokemon from './components/Pokemon';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      pokemon: data
-    };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     pokemon: data
+  //   };
+  // }
 
   render() {
     return (
