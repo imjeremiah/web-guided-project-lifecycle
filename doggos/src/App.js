@@ -25,6 +25,9 @@ class App extends React.Component {
         console.log("State Changed");
         if (prevState.dogImages !== this.state.dogImages) {
             console.log("DogImages changed");
+            if (this.state.breed === "chihuahua") {
+                console.log("Chihauhua selected :(");
+            }
         }
     }
 
