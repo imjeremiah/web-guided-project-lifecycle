@@ -24,13 +24,14 @@ class App extends React.Component {
             <div>
                 {
                     this.state.dogImages.map(image=> {
-                        console.log(image);
+                        // console.log(image);
+                        <img width="300" src={image}/>
                     })
                 }
+                {/* <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
                 <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
                 <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
-                <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
-                <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/>
+                <img width="300" src="https://images.dog.ceo/breeds/husky/MsMilo_Husky1.jpg"/> */}
             </div>
         </div>);
     }
