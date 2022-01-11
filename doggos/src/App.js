@@ -84,7 +84,7 @@ class App extends React.Component {
     render() {
         return (<div>
             <h1>Dog Image Query 3000</h1>
-            <SearchForm breed={this.state.breed} />
+            <SearchForm breed={this.state.breed} handleChange={this.handleChange} handleSearch={this.handleSearch} />
             <ImageList dogImages={this.state.dogImages}/>
         </div>);
     }
