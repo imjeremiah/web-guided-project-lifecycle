@@ -3,7 +3,8 @@ import axios from 'axios';
 
 class App extends React.Component {
     state = {
-        dogImages: []
+        dogImages: [],
+        breed: ""
     }
 
     componentDidMount() {
@@ -25,7 +26,7 @@ class App extends React.Component {
         //1. get our breed input.
         //2. do an axios call
         //3. save the response from the call to our state
-        const breed = "boxer";
+        const breed = e.target.value;
 
         axios.get(`https://dog.ceo/api/breed/${breed}/images`)
             .then(resp => {
