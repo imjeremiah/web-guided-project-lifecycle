@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const AppFunc = () => {
+  console.log();
   const [name, setName] = useState("Warren");
   
   const handleClick = () => {
