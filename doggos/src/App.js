@@ -18,7 +18,8 @@ class App extends React.Component {
     }
 
     componentDidUpdate() {
-        
+        //1. check to see if there is an update.
+        //2. check to if dogImages updated.
     }
 
     handleChange = (e) => {
