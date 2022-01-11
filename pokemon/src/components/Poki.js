@@ -7,6 +7,7 @@ class Poki extends React.Component {
 
     render() {
         const { pokemon } = this.props;
+        
         console.log(`Poke ${this.props.pokemon.name} Is Rendering.`)
         return(
         <div key={pokemon.id} className="pokemon">
