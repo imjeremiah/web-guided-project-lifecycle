@@ -20,6 +20,9 @@ class App extends React.Component {
     componentDidUpdate() {
         //1. check to see if there is an update.
         //2. check to if dogImages updated.
+        //3. check if breed === chihuahua
+        //4. do an axios call on husky
+        console.log("State Changed");
     }
 
     handleChange = (e) => {
