@@ -6,7 +6,7 @@ const AppFunc = () => {
   
   useEffect(()=> {
     console.log("AppFunc: Component has mounted.");
-  })
+  }, []);
 
   const handleClick = () => {
     console.log("AppFunc: Change State.");
