@@ -7,10 +7,10 @@ const AppFunc = () => {
   const handleClick = () => {
     console.log("AppFunc: Change State.");
     setName("Allison");
-    console.log("Current state: ", name);
   };
 
   console.log("AppFunc: Render DOM");
+  console.log("Current state: ", name);
   return (
     <div>
       <h1>Hello {name}!</h1>
