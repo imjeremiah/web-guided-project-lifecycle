@@ -5,10 +5,11 @@ const AppFunc = () => {
   const [name, setName] = useState("Warren");
   
   const handleClick = () => {
+    console.log("AppFunc: Change State.");
     setName("Allison");
   };
 
-  console.log("AppFunc: Start rendering");
+  console.log("AppFunc: Render DOM");
   return (
     <div>
       <h1>Hello {name}!</h1>
