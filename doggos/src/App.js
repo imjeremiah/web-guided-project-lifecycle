@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import ImageList from './components/ImageList';
 
-class SearchForm extends React.Components {
+class SearchForm extends React.Component {
     render() {
         return(<form>
             <input value={this.props.breed} onChange={this.props.handleChange}/>
