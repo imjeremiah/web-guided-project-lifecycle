@@ -10,6 +10,7 @@ class AppClass extends React.Component {
   }
 
   handleNameButtonClick = (e) => {
+    console.log("AppClass: Changes State");
     this.setState({
       ...this.state,
       name: "Allison"
