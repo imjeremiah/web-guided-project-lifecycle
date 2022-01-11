@@ -18,7 +18,9 @@ class App extends React.Component {
 
     handleSearch = (e) => {
         e.preventDefault();
-        
+        //1. get our breed input.
+        //2. do an axios call
+        //3. save the response from the call to our state
     }
 
     render() {
