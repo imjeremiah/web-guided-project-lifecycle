@@ -23,20 +23,20 @@ class App extends React.Component {
         //3. check if breed === chihuahua
         //4. do an axios call on husky
         console.log("State Changed");
-        if (prevState.dogImages !== this.state.dogImages) {
-            console.log("DogImages changed");
-            if (this.state.breed === "chihuahua") {
-                console.log("Chihauhua selected :(");
-                axios.get("https://dog.ceo/api/breed/husky/images")
-                    .then(resp=> {
-                        this.setState({
-                            ...this.state,
-                            dogImages: resp.data.message,
-                            breed: "husky"
-                        })
-                    })
-            }
-        }
+        // if (prevState.dogImages !== this.state.dogImages) {
+        //     console.log("DogImages changed");
+        //     if (this.state.breed === "chihuahua") {
+        //         console.log("Chihauhua selected :(");
+        //         axios.get("https://dog.ceo/api/breed/husky/images")
+        //             .then(resp=> {
+        //                 this.setState({
+        //                     ...this.state,
+        //                     dogImages: resp.data.message,
+        //                     breed: "husky"
+        //                 })
+        //             })
+        //     }
+        // }
     }
 
     handleChange = (e) => {
