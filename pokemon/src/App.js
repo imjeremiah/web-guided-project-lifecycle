@@ -12,10 +12,12 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log("App: Component Has Mounted.");
-    this.setState({
-      ...this.state,
-      pokemon: data
-    });
+    setTimeout(()=> {
+      this.setState({
+        ...this.state,
+        pokemon: data
+      });
+    }, 3000);
   }
 
   render() {
