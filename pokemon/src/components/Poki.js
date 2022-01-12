@@ -1,8 +1,14 @@
 import React from 'react';
 
 class Poki extends React.Component {
+
+  componentDidMount() {
+    console.log(`Poki ${this.props.pokemon.name}: Component Mounted.`);
+  }
+
     render() {
         const { pokemon } = this.props;
+        console.log(`Poki ${this.props.pokemon.name}: Component Rendered.`);
 
         return(
         <div key={pokemon.id} className="pokemon">
